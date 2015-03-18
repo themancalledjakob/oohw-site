@@ -1,0 +1,85 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@font-face {
+    font-family: polaris;
+    src: url(fonts/Polaris_V2_Bold.otf);
+}
+
+/* Space out content a bit */
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+#background {
+  position: fixed;
+  top: -200px;
+  z-index: 0;
+}
+#ytplayer {
+  width: 100%;
+  height: 100%;
+}
+
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 255px;
+  height: 128px;
+  background: url(../images/oohw-logo-01.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  // background-color: #f0f;
+  z-index: 1;
+}
+
+#content {
+  position: absolute;
+  z-index: 2;
+  background-color:rgba(255, 255, 255, 1.0);
+  -webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  padding: 10px;
+  h1 {
+    font-family: polaris;
+    font-size: 24px;
+    color: #000;
+    margin: 10px 0px 0px 10px;
+  }
+  a {
+    font-family: polaris;
+    font-size: 12px;
+    color: #000;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+  .text {
+      position: relative;
+      margin: 10px 0px 0px 10px;
+      color: #00a;
+  }
+
+#about_t{
+  width: 340px;
+}
+#manifest_t {
+  width: 290px;
+}
+#work_t {
+  width: 290px;
+}
+#contact_t {
+  width: 290px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+}
